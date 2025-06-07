@@ -1,20 +1,28 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   {% feed_meta %}
   {% seo %}
 </head>
 
 <body>
-  {% include navigation.html %}
-  <div class="main-content">
+  <header>
+    {% include navigation.html %}
+  </header>
+  <main class="main-content">
     {{ content }}
-  </div>
+  </main>
+  <footer class="site-footer">
+    <small>&copy; {{ site.time | date: '%Y' }} {{ site.title }} &mdash; Powered by Jekyll</small>
+  </footer>
 </body>
 
 </html>

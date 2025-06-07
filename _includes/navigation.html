@@ -1,9 +1,11 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ site.baseurl }}{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-  <span style="margin-left:auto; display:flex; gap:0.5em;">
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" title="Share on LinkedIn">🔗 LinkedIn</a>
-    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" title="Share on Twitter">🐦 Twitter</a>
-  </span>
+<nav class="site-nav">
+  <div class="nav-links">
+    {% for item in site.data.navigation %}
+      <a href="{{ site.baseurl }}{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </div>
+  <div class="nav-social">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" title="Share on LinkedIn" aria-label="Share on LinkedIn">🔗</a>
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" title="Share on Twitter" aria-label="Share on Twitter">🐦</a>
+  </div>
 </nav>

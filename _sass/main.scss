@@ -1,58 +1,161 @@
-.current {
-  color: green;
+// Modern minimal blog styles
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #fafbfc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  font-size: 1.15rem;
+header {
+  background: #fff;
+  box-shadow: 0 1px 0 #ececec;
+  padding: 0.5rem 0;
 }
-nav a {
-  display: inline-block;
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
   text-decoration: none;
   color: inherit;
-  padding: 0.5em 1em;
-  border-radius: 6px;
+  font-weight: 500;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
   transition: background 0.2s, color 0.2s;
 }
-nav a:hover, nav a.current {
-  background: #f0f0f0;
+.nav-links a:hover, .nav-links a.current {
+  background: #f0f4f8;
   color: #007acc;
+}
+.nav-social {
+  display: flex;
+  gap: 0.7em;
+  font-size: 1.2em;
 }
 
 .main-content {
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 1.5rem 0.5rem;
+  max-width: 600px;
+  margin: 2.5rem auto 2rem auto;
+  padding: 1.5rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   font-size: 1.08rem;
   line-height: 1.7;
 }
 
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    font-size: 1rem;
-    align-items: stretch;
-  }
-  nav a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0.75em 0;
-  }
+.site-footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.98rem;
+  padding: 2rem 0 1.2rem 0;
+  background: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.1rem; }
+
+ul, ol {
+  padding-left: 1.3em;
+}
+
+@media (max-width: 700px) {
   .main-content {
     max-width: 98vw;
     padding: 1rem 0.25rem;
     font-size: 1rem;
   }
-  nav span {
-    margin-left: 0;
-    justify-content: center;
+  .site-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
   }
+  .nav-links {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .nav-social {
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+}
+
+.author-profile {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.author-position {
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+}
+.author-bio {
+  margin-bottom: 2em;
+}
+.author-posts {
+  margin-top: 2em;
+}
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.post-list li {
+  margin-bottom: 0.7em;
+  padding: 0.7em 0.9em;
+  border-radius: 6px;
+  transition: background 0.18s;
+}
+.post-list li a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 500;
+}
+.post-list li:hover {
+  background: #f0f4f8;
+}
+
+.post-article {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 2.2rem 1.5rem 2rem 1.5rem;
+}
+.post-meta {
+  color: #888;
+  font-size: 1.02rem;
+  margin-bottom: 2.2em;
+}
+.post-meta a {
+  color: #007acc;
+  text-decoration: none;
+}
+.post-content {
+  margin-top: 1.5em;
 }
