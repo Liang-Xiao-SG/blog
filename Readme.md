@@ -8,3 +8,5 @@ bundle exec jekyll serve --baseurl /blog
 add _config.yml baseurl :/ blog
 and include {{ site.baseurl }} in all layout file and style sheet
 
+# Building progress
+https://github.com/Liang-Xiao-SG/blog/actions/
