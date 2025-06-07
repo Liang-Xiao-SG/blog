@@ -63,4 +63,4 @@ _January 2020 — Present_ (GPA: 3.67)
 - Runner-up for RSAF Best Logistics Support Spec-2008, Republic of Singapore Air Force
 
 ## Links
-[LinkedIn](https://www.linkedin.com/in/your-linkedin) | [GitHub](https://github.com/your-github)
+[LinkedIn](https://www.linkedin.com/in/liang-xiao-sg) | [GitHub](https://github.com/iang-Xiao-SG) | [RedNote](https://www.xiaohongshu.com/user/profile/619b87e4000000001000ff47)

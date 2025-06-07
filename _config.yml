@@ -1,6 +1,7 @@
 collections:
   authors:
     output: true
+url: "https://liang-xiao-sg.github.io/blog"
 baseurl: "/blog"
 defaults:
   - scope:
