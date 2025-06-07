@@ -18,7 +18,12 @@ defaults:
     values:
       layout: "default"
 
+title: "My Blog"
+theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-archives
