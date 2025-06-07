@@ -2,4 +2,8 @@
   {% for item in site.data.navigation %}
     <a href="{{ site.baseurl }}{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
   {% endfor %}
+  <span style="margin-left:auto; display:flex; gap:0.5em;">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" title="Share on LinkedIn">🔗 LinkedIn</a>
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" title="Share on Twitter">🐦 Twitter</a>
+  </span>
 </nav>
