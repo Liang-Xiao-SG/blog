@@ -19,6 +19,7 @@ defaults:
       layout: "default"
 
 title: "My Blog"
+theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-include-cache
