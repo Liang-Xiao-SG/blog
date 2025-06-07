@@ -1,11 +1,36 @@
 <nav class="site-nav">
   <div class="nav-links">
     {% for item in site.data.navigation %}
-      <a href="{{ site.baseurl }}{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+    <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url==item.link %} class="current" {% endif %}>{{ item.name
+      }}</a>
     {% endfor %}
   </div>
-  <div class="nav-social">
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" rel="noopener" title="Share on LinkedIn" aria-label="Share on LinkedIn">🔗</a>
-    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" rel="noopener" title="Share on Twitter" aria-label="Share on Twitter">🐦</a>
+  <div class="nav-social" style="display: flex; gap: 0.5rem;">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      target="_blank" rel="noopener" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0A66C2" viewBox="0 0 24 24" role="img">
+        <title>LinkedIn</title>
+        <path
+          d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v12h-4V8zm7 0h3.6v1.71h.05c.5-.95 1.75-1.96 3.6-1.96 3.85 0 4.56 2.53 4.56 5.82V20h-4v-5.47c0-1.3-.02-2.98-1.82-2.98s-2.1 1.42-2.1 2.88V20h-4V8z" />
+      </svg>
+    </a>
+
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank"
+      rel="noopener" title="Share on Twitter" aria-label="Share on Twitter">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1DA1F2" viewBox="0 0 24 24" role="img">
+        <title>Twitter</title>
+        <path
+          d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.38 8.6 8.6 0 0 1-2.72 1.03 4.28 4.28 0 0 0-7.29 3.9A12.13 12.13 0 0 1 3.11 4.8a4.28 4.28 0 0 0 1.33 5.7A4.2 4.2 0 0 1 2.8 9v.05a4.28 4.28 0 0 0 3.44 4.2 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.97 8.6 8.6 0 0 1-5.33 1.84A8.76 8.76 0 0 1 2 19.54 12.15 12.15 0 0 0 8.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.3 8.3 0 0 0 24 6.1a8.49 8.49 0 0 1-2.54.7z" />
+      </svg>
+    </a>
+    <a href="https://rednotes.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank"
+      rel="noopener" title="Share on Rednotes" aria-label="Share on Rednotes">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#E53935" viewBox="0 0 24 24" role="img">
+        <title>Rednotes</title>
+        <circle cx="12" cy="12" r="10" />
+        <text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial"
+          font-weight="bold">R</text>
+      </svg>
+    </a>
   </div>
 </nav>
