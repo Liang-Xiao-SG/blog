@@ -2,8 +2,8 @@
 layout: post
 author: liangxiao
 ---
-Benefits:
--------
+
+### Benefits
 Learn to output is the only way to contribute to a secondary medium
 
 Building blog can collect thoughts
