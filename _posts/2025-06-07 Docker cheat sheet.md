@@ -2,7 +2,7 @@
 layout: post
 author: liangxiao
 ---
-test
+
 ##  Run 
 *   **`docker run [IMAGE]`**: Create & start a container.
 
