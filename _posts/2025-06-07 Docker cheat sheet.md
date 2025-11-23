@@ -2,8 +2,7 @@
 layout: post
 author: liangxiao
 ---
-
-##  Run 
+## Run 
 *   **`docker run [IMAGE]`**: Create & start a container.
 
     *   `-p 80:80` (port map host:container)
